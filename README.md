@@ -1,28 +1,59 @@
-# TryHackMe SecureShop Walkthrough
+# TryHackMe SecureShop – Vulnerable Web App & Walkthrough
 
-This repository contains a detailed walkthrough for the **TryHackMe SecureShop** web security challenge.
+This repository contains both:
+- A **custom-built vulnerable e-commerce web application (SecureShop)**
+- A **detailed walkthrough** demonstrating exploitation of OWASP Top 10 web vulnerabilities
 
-## 📌 Overview
-SecureShop is a vulnerable e-commerce web application designed for learning web application security.  
-This walkthrough demonstrates how to identify, exploit, and remediate common **OWASP Top 10** vulnerabilities.
+The project was designed for **educational and ethical security testing** purposes.
 
-## 🧪 Vulnerabilities Covered
-- SQL Injection (A03:2021)
-- Broken Access Control / IDOR (A01:2021)
-- Stored Cross-Site Scripting (XSS)
-- Sensitive Data Exposure / Information Disclosure
+---
 
-## 🛠 Skills Demonstrated
-- Manual web application testing
-- Vulnerability identification & exploitation
-- OWASP Top 10 mapping
-- Security impact analysis
-- Remediation and secure coding practices
+## 📌 Project Overview
+SecureShop is a deliberately vulnerable web application developed using PHP and MySQL to simulate real-world web security flaws.  
+The application was later used as the basis for a **TryHackMe-style CTF challenge**, where common vulnerabilities are identified, exploited, and remediated.
 
-## 📄 Walkthrough
-- Full step-by-step documentation is available in the PDF walkthrough included in this repository.
+---
+
+## 🧩 Vulnerabilities Implemented
+- **SQL Injection** – Authentication bypass via unparameterized queries  
+- **Broken Access Control (IDOR)** – Unauthorized access to user profiles  
+- **Stored Cross-Site Scripting (XSS)** – Unsanitized user input execution  
+- **Sensitive Data Exposure** – Publicly accessible backup files  
+
+All vulnerabilities are mapped to **OWASP Top 10 (2021)** categories.
+
+---
+
+## 🛠 Technology Stack
+- Backend: PHP  
+- Database: MySQL  
+- Web Server: Apache  
+- Frontend: HTML, CSS, JavaScript  
+- Hosting: InfinityFree  
+
+---
+
+## 🧪 Skills Demonstrated
+- Secure & insecure web application development
+- OWASP Top 10 vulnerability implementation
+- Manual web application penetration testing
+- CTF-style lab design
+- Security documentation & walkthrough writing
+- Impact analysis and remediation strategies
+
+---
+
+## 📄 Walkthrough Documentation
+- A complete step-by-step walkthrough is provided in the included PDF:
+  **SecureShop Walkthrough.pdf**
+
+---
 
 ## 🔗 TryHackMe Room
 - SecureShop Room: https://tryhackme.com/jr/secureshop79
 
-> ⚠️ This project is for **educational and ethical purposes only**.
+---
+
+## ⚠️ Disclaimer
+This project is created **strictly for educational purposes**.  
+All vulnerabilities were intentionally introduced in a controlled environment to demonstrate common web security risks.
